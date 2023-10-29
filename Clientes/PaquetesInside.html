@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/scrollbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="Css/paquetesInside.css" rel="stylesheet">
+    <link rel="preload" href="Css/paquetesInside.css" as="style">
+
+    <title>Paquetes</title>
+</head>
+<body>
+    <div class="pagina-container">
+        <section class="busqueda-container">
+            <div class="form-section">
+                <label> Búsqueda </label>
+                <div class="form-input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <input id="busqueda-lugar" class="form-input-inside" type="search" placeholder="Búsqueda"> 
+                </div>
+            </div>
+            <div class="form-section">
+                <input type="button" id="boton-buscar-lugar" value="Buscar" class="button-buscar">
+            </div>
+        </section>
+
+        <section class="principal-container">
+            <h2 class="titulo"> Paquetes Vuelo + Hotel </h2>
+            <p class="subtitulo"> Lista de paquetes cerca de ti </p>
+
+            <div class="paquetes-container" id="paquetes-seccion">
+                <!-- <article class="paquete">
+                    <div class="up"> 
+                        <img src="Img/p1.jpg">
+                        <div class="info">
+                            <p class="titulo-paquete"> Selina Cancún Laguna Hotel Zone </p> 
+                            <p class="des-paquete"> Conocido como “el Miami de México”, Cancún ofrece una mezcla entre la vida nocturna y la cultura maya. </p>
+                            
+                            <div class="precios">
+                                <p class="texto-paquete"> Precio: </p>
+                                <p class="precio-paquete"> $3500.00 MXN </p>
+                                <p class="descuento"> -15% </p>
+                                <p class="oferta"> ¡Oferta exclusiva! </p>
+                            </div>
+
+                            <div class="down"> 
+                                <div>
+                                    <p> Cama tradicional: </p>
+                                    <p class="precio-hotel"> $180.00 MXN </p>
+                                </div>
+                                <div>
+                                    <p> Cama premium: </p>
+                                    <p class="precio-hotel-p"> $280.00 MXN </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="Js/paquetesInside.js"> </script>
+</body>
+</html>

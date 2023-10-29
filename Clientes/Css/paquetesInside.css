@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    align-items: center; 
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pagina-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 1.5rem;
+}
+
+.busqueda-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    height: fit-content;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.precio-paquete {
+    background-color: cornflowerblue;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.precio-hotel {
+    background-color: orange;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.precio-hotel-p {
+    background-color: crimson;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.descuento {
+    background-color: yellow;
+    height: fit-content;
+    text-align: center;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.oferta {
+    background-color: greenyellow;
+    text-align: center;
+    height: fit-content;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.subtitulo {
+    font-size: 1.6rem;
+}
+
+.titulo-paquete {
+    font-size: 2rem;
+}
+
+.des-paquete {
+    font-size: 1rem;
+    color: gray;
+    font-style: italic;
+}
+
+.texto-paquete {
+    font-style: 0.9rem;
+    text-align: right;
+}
+
+.principal-container .titulo {
+    font-size: 3rem;
+    font-weight: normal;
+    color: cornflowerblue;
+}
+
+.principal-container .paquetes-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+    gap: 1.5rem;
+}
+
+.principal-container .paquetes-container .paquete {
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.principal-container .paquetes-container .paquete .up {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.principal-container .paquetes-container .paquete .up img {
+    height: 100%;
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+}
+
+.principal-container .paquetes-container .paquete .up .info {
+    padding: 1rem 0.9rem 0rem 1.5rem;
+    text-align: left;
+}
+
+.principal-container .paquetes-container .paquete .up .info .precios {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.principal-container .paquetes-container .paquete .down {
+    display: flex;
+    gap: 2rem;
+}
+
+.principal-container .paquetes-container .paquete .down div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    font-size: 0.8rem;
+    color: black;
+}
+.form-input {
+    display: flex; 
+    gap: 0.3rem;
+    font-size: 1rem;
+    border: solid thin rgba(0, 0, 0, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.form-input svg {
+    color: cornflowerblue;
+}
+
+.form-input-inside {
+    border: none;
+    font-size: 1rem;
+    color: gray;
+}
+
+.button-buscar {
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+    transition: all .35s linear;
+}
+
+.button-buscar:hover {
+    background-color: rgb(73, 105, 167);
+    transition: all .35s linear;
+}

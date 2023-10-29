@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+} */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    align-items: center; 
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cover-container
+{
+    background-image: url(../Img/Playavuelo.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: 20rem;
+    padding: 1.5rem;
+}
+
+.cover-container:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.cover-container h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: normal;
+    position: relative;
+}
+
+.cover-container p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    position: relative;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem 3rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.form-container .header-form {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.form-container .header-form a {
+    font-size: 1.3rem;
+    color: black;
+    transition: all .35s linear;
+    cursor: pointer;
+}
+
+.form-container .header-form a:hover{
+    color: cornflowerblue;
+    transition: all .35s linear;
+    font-size: 1.5rem;
+}
+
+.form-container .form {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.section-one-viajes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
+
+.section-two-viajes {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.section-one-hoteles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
+
+.section-two-hoteles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.section-one-experiencias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
+
+.section-two-experiencias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.section-one-seguros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
+
+.section-two-seguros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.form .form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.form .form-input {
+    display: flex; 
+    gap: 0.3rem;
+    font-size: 1rem;
+    border: solid thin rgba(0, 0, 0, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.form .form-input svg {
+    color: cornflowerblue;
+}
+
+.form .form-input-inside {
+    border: none;
+    font-size: 1rem;
+    color: gray;
+}
+
+ .button-buscar {
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    padding: 0.5rem 0rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+    transition: all .35s linear;
+}
+
+.button-buscar:hover {
+    background-color: rgb(73, 105, 167);
+    transition: all .35s linear;
+}
+
+
+/* ------------------------- */ 
+
+.section-main {
+    padding: 2rem;
+}
+
+.section-main .article-section {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.section-main .section-1 h2 {
+    font-weight: normal;
+    color: cornflowerblue;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.section-main .section-1 p {
+    text-align: left;
+}
+
+.section-main .article-section img {
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.section-main .article-section article {
+    background-color: white;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.2rem;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    text-align: left;
+}
+
+.section-main .article-section article:hover {
+    border: solid cornflowerblue;
+    color: cornflowerblue;
+    transition: all 0.15s linear;
+} 
+
+.section-main .article-section .articulo {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    height: fit-content;
+    transition: all 0.15s linear;
+}
+
+.section-main .article-section .articulo .titulo-art {
+    font-size: 1.2rem;
+}
+
+.section-main .article-section .articulo .prices-art {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.section-1 .article-section .articulo .precio-art {
+    background-color: cornflowerblue;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-1 .article-section .articulo .descuento-art {
+    background-color: yellow;
+    height: fit-content;
+    text-align: center;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-1 .article-section .articulo .promocion-art {
+    background-color: greenyellow;
+    text-align: center;
+    height: fit-content;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-2 .header-second-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem 3rem 1rem 3rem;
+}
+
+.section-2 h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: normal;
+    color: crimson;
+    margin: 2.5rem 0rem 2rem 0rem;
+}
+
+.section-2 .header-second-section a {
+    font-size: 1.5rem;
+    transition: all .35s linear;
+    cursor: pointer;
+}
+
+.section-2 .header-second-section a:hover {
+    font-size: 2rem;
+    color: crimson;
+    transition: all .35s linear;
+}
+
+.section-2 .second-art-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: solid thin rgba(0,0,0,0.5);
+    border-bottom: solid thin rgba(0,0,0,0.5);;
+    background-color: white;
+    gap: 2rem 1.5rem;
+    padding: 2rem;
+}
+
+.section-2 .second-art-section .art-2 {
+    display: flex;
+    flex-basis: 2fr 1fr;
+    gap: 1rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.section-2 .second-art-section .art-2:hover {
+    color: crimson;
+    width: 102%;
+}
+
+.section-2 .second-art-section .art-2 img {
+    width: 50%;
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.section-2 .second-art-section .art-2 .titulo-art {
+    font-size: 1.5rem;
+}
+
+.section-2 .second-art-section .art-2 .subtitulo-art {
+    font-size: 1rem;
+    color: gray;
+}
+
+.section-2 .second-art-section .art-2 .prices-art {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.section-2 .second-art-section .art-2 .precio-art {
+    background-color: cornflowerblue;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-2 .second-art-section .art-2 .descuento-art {
+    background-color: yellow;
+    height: fit-content;
+    text-align: center;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-2 .second-art-section .art-2 .promocion-art {
+    background-color: greenyellow;
+    text-align: center;
+    height: fit-content;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.section-3 {
+    background-color: white;
+    margin: 3.5rem 2rem;
+    padding: 2rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+}
+
+.section-3 h3 {
+    color: rgb(180, 62, 180);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.section-3 p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .section-2 .header-second-section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .section-main .article-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+    }
+
+    .form-container .header-form {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+    
+    .section-one-viajes,
+    .section-two-viajes,
+    .section-one-hoteles, 
+    .section-two-hoteles, 
+    .section-one-experiencias,
+    .section-two-experiencias,
+    .section-one-seguros, 
+    .section-two-seguros {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .button-buscar {
+        width: 80%;
+    }
+
+    .section-2 .second-art-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .section-2 .second-art-section .art-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-2 .second-art-section .art-2 img {
+        width: 100%;
+    } 
+}
+
+@media (min-width: 481px) and  (max-width: 768px) {
+    .section-2 .header-second-section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .section-main .article-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-container .header-form {
+        display: flex;
+        flex-basis: 50% 50%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .section-one-viajes,
+    .section-two-viajes,
+    .section-one-hoteles, 
+    .section-two-hoteles, 
+    .section-one-experiencias,
+    .section-two-experiencias,
+    .section-one-seguros, 
+    .section-two-seguros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .button-buscar {
+        width: 80%;
+    }
+
+    .section-2 .second-art-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .section-2 .second-art-section .art-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-2 .second-art-section .art-2 img {
+        width: 100%;
+    } 
+}
+
+@media (min-width: 769px) and  (max-width: 1080px) {
+    .section-2 .header-second-section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .section-main .article-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-container .header-form {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+    
+    .section-one-viajes,
+    .section-two-viajes,
+    .section-one-hoteles, 
+    .section-two-hoteles, 
+    .section-one-experiencias,
+    .section-two-experiencias,
+    .section-one-seguros, 
+    .section-two-seguros {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .button-buscar {
+        width: 80%;
+    }
+
+    .section-2 .second-art-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .section-2 .second-art-section .art-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-2 .second-art-section .art-2 img {
+        width: 100%;
+    } 
+}

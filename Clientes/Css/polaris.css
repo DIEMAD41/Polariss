@@ -1,0 +1,134 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(214, 213, 214);
+    margin: 0;
+}
+
+img,
+svg 
+{
+    max-width: 100%;/*Maximo del contenedor*/
+}
+
+.Partidura
+{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 64px 95%;
+    grid-template-rows: max-content 90%;
+    grid-template-areas: "C C " "M P ";
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.C
+{
+    display: flex;
+    grid-area: C;
+
+    width: 100%;
+    height: max-content;
+    background: black;
+}
+
+    .C .izq
+    {
+        display: flex;
+        width: 70%;
+        height: 8rem;
+        align-items: center;
+        justify-content: left; 
+    }
+
+    .izq .imglogo
+        {
+            margin-left: 1rem;
+            margin-right: 2rem;
+        }
+
+    .izq h1
+    {
+        color: #FFFFFF;
+        max-width: max-content;
+        font-size: 50px;
+    }
+
+    .C .der
+    {
+        display: flex;
+        width: 30%;
+        height: 8rem;
+        align-items: center;
+        justify-content: end;
+    }
+
+        .der svg
+        {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+
+.M
+{
+    grid-area: M;
+    width: 64px;
+    height: 100%;
+    background: #FFFFFF;
+}
+    .M .op
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 64px;
+        height: 64px;
+    }
+
+    .op.active,
+    .op:hover
+    {
+        background-color: red;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+.P
+{
+    grid-area: P;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 213, 214);
+}
+
+
+.N
+{
+    grid-area: N;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(214, 213, 214);
+}

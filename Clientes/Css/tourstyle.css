@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 100%;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.titulo-art {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitulo-art {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.cover-container {
+    background-image: url(../Img/Tourcan.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: 20rem;
+    padding: 1.5rem;
+}   
+
+.cover-container:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.cover-container h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: normal;
+    position: relative;
+}
+
+.cover-container p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    position: relative;
+}
+
+.main-container {
+    margin: 2rem;
+}
+
+.main-container .form-container {
+    background-color: cornflowerblue;
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+
+.main-container .form-container label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-container .form-container .form-container2 {
+    margin-top: 2rem;
+    padding: 0rem 2rem 0rem 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.main-container .form-container .form-container2 input {
+    width: 100%;
+}
+
+.first-section {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.first-section .article-section {
+    margin: 0rem 2rem 0rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.first-section .article-section img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.first-section .article-section article {
+    box-shadow: 0px 0.5rem 0.9375rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.first-section .article-section .articulo {
+    background-color: white;
+    padding: 1rem;
+}
