@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Calendar
+    </title>
+    <link rel="stylesheet" href="assets/css/calendar.css">
+</head>
+
+<body class="light">
+    
+    <div class="calendario">
+        <div class="calendario-header">
+            <span class="mes-picker" id="mes-picker">Febrero</span>
+            <div class="año-picker">
+                <span class="año-cambio" id="año-anterior">
+                    <pre><</pre>
+                </span>
+                <span id="año">2021</span>
+                <span class="año-cambio" id="año-siguiente">
+                    <pre>></pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendario-body">
+            <div class="calendario-dia-semana">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mie</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sab</div>
+            </div>
+            <div class="calendario-dias"></div>
+        </div>
+        <div class="calendario-footer">
+            <div class="toggle">
+                <span>Modo Oscuro</span>
+                <div class="dark-mode-switch">
+                    <div class="dark-mode-switch-ident"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lista-meses"></div>
+    </div>
+
+    <div class="calendario2">
+        <div class="calendario-header">
+            <span class="mes-picker" id="mes-picker">Febrero</span>
+            <div class="año-picker">
+                <span class="año-cambio" id="año-anterior2">
+                    <pre><</pre>
+                </span>
+                <span id="año">2021</span>
+                <span class="año-cambio" id="año-siguiente2">
+                    <pre>></pre>
+                </span>
+            </div>
+        </div>
+        <div class="calendario-body">
+            <div class="calendario-dia-semana">
+                <div>Dom</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mie</div>
+                <div>Jue</div>
+                <div>Vie</div>
+                <div>Sab</div>
+            </div>
+            <div class="calendario-dias"></div>
+        </div>
+        <div class="calendario-footer">
+            <div class="toggle">
+                <span></span>
+                <div class="dark-mode-switch" id="dms2">
+                    <div class=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="calendario-footer2">
+                <span>Listo</span>
+                <ion-icon name="checkbox-outline"></ion-icon>
+        </div>
+        <div class="lista-meses"></div>
+        
+    </div>
+
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/calendar2.js"></script>
+</body>
+
+</html>
