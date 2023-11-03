@@ -91,6 +91,7 @@ generateCalendar2 = (mes, año) => {
             }
 
             let array = JSON.parse(localStorage.getItem('infoTrans'))
+            if (array) {
             array.forEach(element => {
                     /* console.log(element.fechai.split("/")[0]);
                     console.log(element.fechai.split("/")[1]);
@@ -111,6 +112,7 @@ generateCalendar2 = (mes, año) => {
                 }
                
             });
+        }
         }
         dias_calendario2.appendChild(dia)
     }

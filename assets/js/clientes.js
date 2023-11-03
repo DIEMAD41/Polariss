@@ -3,28 +3,30 @@ let clientes = [];
 const profiles=document.querySelector(".blur");
 const card=document.querySelector(".card");
 
-//Accion al cargar el DOM
-cargarEventListeners();
-function cargarEventListeners(){
-    document.addEventListener('DOMContentLoaded',() =>{
-        clientes=JSON.parse(localStorage.getItem('ClientesData')) || 0;
-        RellenarClientesR()
-        const listoB=document.querySelector('.frameC').contentWindow.document.querySelector('.calendario-footer2')
-        listoB.addEventListener('click', () =>{
-            const frameC = document.querySelector('.frameC')
-            frameC.classList.remove('showC')
 
-            let fechas= []
-            fechas=JSON.parse(localStorage.getItem('FechaSeleccionada')) || 0
+function cargarEventListeners() {
+    document.addEventListener('DOMContentLoaded', () => {
+        clientes = JSON.parse(localStorage.getItem('ClientesData')) || [];
+        RellenarClientesR();
 
-            document.querySelector('#dia').value=parseInt(fechas[0].dia)
-            document.querySelector('#mes').value=parseInt(fechas[0].mes)
-            document.querySelector('#año').value=parseInt(fechas[0].año)
+        const frameC = document.querySelector('.frameC');
+        const listoB = frameC.contentWindow.document.querySelector('.calendario-footer2');
 
-        })
+        if (listoB) {
+            listoB.addEventListener('click', () => {
+                const frameC = document.querySelector('.frameC')
+                frameC.classList.remove('showC')
+    
+                let fechas= []
+                fechas=JSON.parse(localStorage.getItem('FechaSeleccionada')) || 0
+    
+                document.querySelector('#dia').value=parseInt(fechas[0].dia)
+                document.querySelector('#mes').value=parseInt(fechas[0].mes)
+                document.querySelector('#año').value=parseInt(fechas[0].año)
+            });
+        }
     });
 }
-
 
 //Animacion de operaciones
 let list=document.querySelectorAll(".list");
@@ -413,6 +415,7 @@ function AbrirPerfilCliente()
 {
     //Abrir el perfil de los clientes
     const profile=document.querySelectorAll(".ops-right tr");
+    console.log(profile);
     const card=document.querySelector(".card");
     const profiles=document.querySelector(".blur");
     profile.forEach(element => {
@@ -421,6 +424,7 @@ function AbrirPerfilCliente()
             clientes.find(function(value, index) {
                 if (value.id == parseInt(element.querySelector('.idT').textContent))
                 {
+                    console.log("Este es un mensaje informativo.");
                     while (card.firstChild) {
                         card.removeChild(card.firstChild);
                     }
